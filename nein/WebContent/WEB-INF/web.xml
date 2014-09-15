@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>nein</display-name>
+
+  <servlet>
+  	<servlet-name>NeinServlet</servlet-name>
+  	<servlet-class>nein.helloNein</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>NextServlet</servlet-name>
+  	<servlet-class>nein.NextPage</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AccountServlet</servlet-name>
+  	<servlet-class>nein.AccountPage</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>SumServlet</servlet-name>
+  	<servlet-class>nein.SumServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>NeinServlet</servlet-name>
+  	<url-pattern>/nein</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>NextServlet</servlet-name>
+  	<url-pattern>/next</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AccountServlet</servlet-name>
+  	<url-pattern>/account</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>SumServlet</servlet-name>
+  	<url-pattern>/sum</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
